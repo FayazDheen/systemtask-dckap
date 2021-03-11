@@ -59,15 +59,6 @@
             <td>" . $row['type'] . "</td>
         </tr>
        ";
-       //echo "<td>" . $row['name'] . "</td>";
-        // echo "<td>" . $row['fulladdress'] . "</td>";
-        // echo "<td>" . $row['phone'] . "</td>";
-        // echo "<td>" . $row['productinfo'] . "</td>";
-        // echo "<td>" . $row['productname'] . "</td>";
-        // echo "<td>" . $row['price'] . "</td>";
-        // echo "<td>" . $row['brand'] . "</td>";
-        // echo "<td>" . $row['type'] . "</td>";
-        // echo "</tr>";
       }
     } else {
       echo "0 results";
