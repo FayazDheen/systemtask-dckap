@@ -28,9 +28,7 @@ if(!mysqli_query($conn,$sql))
      echo '<script type="text/javascript">'; 
      echo 'alert("Posted Successfully!");'; 
      echo 'window.location= "index.php";';
-     echo '</script>';    
-    //header('Location: index.php');
-//echo "Data Inserted successfully";
+     echo '</script>';       
 }
 ?>
 
