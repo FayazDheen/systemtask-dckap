@@ -8,15 +8,15 @@
 <?php
     require 'connection.php';
 
-    if(isset($_POST['order']))
+    if(isset($_GET['order']))
     {
-        $order = $_POST['order'];
+        $order = $_GET['order'];
     }else{
         $order = 'product_id';
     }
-    if(isset($_POST['sort']))
+    if(isset($_GET['sort']))
     {
-        $sort = $_POST['sort'];
+        $sort = $_GET['sort'];
     }else{
         $sort = 'ASC';
     }
@@ -25,7 +25,7 @@
     echo mysqli_error($conn);
     $result = mysqli_query($conn, $sql);
     
-    // if (mysqli_num_rows($result) > 0) {
+    if (mysqli_num_rows($result) > 0) {
       $sort == 'DESC' ? $sort = 'ASC' : $sort = 'DESC';
       // output data of each row
       echo"<table >
@@ -69,9 +69,9 @@
         // echo "<td>" . $row['type'] . "</td>";
         // echo "</tr>";
       }
-    // } else {
-    //   echo "0 results";
-    // }
+    } else {
+      echo "0 results";
+    }
     echo "</table>";
     
 ?>
