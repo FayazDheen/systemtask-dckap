@@ -1,9 +1,7 @@
 
 <link rel="stylesheet" href="css/style.css">
 <p><b>To add a post</b> <a href="addform.php">click here</a></p>
-    <a class="fixedButton" href="addform.php">
-    <!-- <div class="roundedFixedBtn"><i class="fa fa-phone"></i></div> -->
- </a>
+    <a class="fixedButton" href="addform.php"></a>
  
 <?php
     require 'connection.php';
@@ -42,8 +40,6 @@
       <th>Type</th> 
       ";
       while($row = mysqli_fetch_assoc($result)) {
-        //echo "<tr>";
-       // echo "<td>" . $row['product_id'] . "</td>";
        $name = $row['name'];
        $price = $row['price'];
        echo" 
